@@ -1,4 +1,11 @@
-import "graphics.js";
+const grid = function() {
+  const grid = [3][3];
+}
 
-console.log("Hello world !");
-showGrid();
+const graphics = function() {
+  const showGrid = () => {
+    console.log(grid().grid)
+  }
+}
+
+graphics().showGrid();
