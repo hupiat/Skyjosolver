@@ -10,7 +10,7 @@ const grid = function() {
   
   const grid = [LINE_SIZE][LINE_SIZE];
   
-  const init = function() {
+  const init = () => {
     for (const i = 0; i <= LINE_SIZE; i++) {
       for (const j = 0; j <= LINE_SIZE; j++) {
         const rand = getRandom(possibleValues[0], possibleValues[possibleValues.length - 1]);
@@ -21,7 +21,9 @@ const grid = function() {
   }
 }
 
-const game = grid().init();
+
+const game = grid();
+game.init();
 
 // DISPLAY
 const graphics = function() {
